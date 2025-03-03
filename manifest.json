@@ -1,11 +1,8 @@
-{
-  "manifest_version": 2,
-  "name": "DarkMode",
-  "version": "1.0",
+{ "manifest_version": 2,
+  "name": "NightPDF",
+  "version": "3.0",
 
   "description": "Add color inverting CSS to your pages to simulate Dark Mode, even for PDFS",
-
-  "permissions" : ["activeTab"],
 
   "icons": {
     "48": "icons/logo.svg"
