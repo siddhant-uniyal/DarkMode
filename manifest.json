@@ -1,27 +1,22 @@
 { "manifest_version": 2,
-  "name": "NightPDF",
-  "version": "3.0",
+  "name": "InstantDarkMode",
+  "version": "1.0",
 
-  "description": "Add color inverting CSS to your pages to simulate Dark Mode, even for PDFS",
+  "description": "Add color inverting CSS to your pages to simulate Dark Mode",
 
   "icons": {
     "48": "icons/logo.svg"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["dark.js"]
-    }
-  ],
+  "permissions" : ["activeTab"],
 
   "browser_action" : {
     "default_icon" : "icons/logo.svg",
-    "default_title" : "DarkMode"
+    "default_title" : "InstantDarkMode"
   },
 
   "background" : {
-    "scripts" : ["background.js"]
+    "scripts" : ["./background.js"]
   },
 
   "commands" : {
